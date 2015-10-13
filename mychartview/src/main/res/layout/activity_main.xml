@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.apple.mychartview.weight.ScrollHistogramView
+        android:id="@+id/scrollhistorgramview"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:scrollbars="none"
+        ></com.apple.mychartview.weight.ScrollHistogramView>
+
+    <HorizontalScrollView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:scrollbars="none"
+        >
+        <com.apple.mychartview.weight.LineChartView
+            android:id="@+id/LineChartView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:scrollbars="none"
+        >
+        <com.apple.mychartview.weight.LineChartView
+            android:id="@+id/LineChartView_blue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/button_refresh_scrollhistorgramview"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="刷新数据"
+        />
+</LinearLayout>
