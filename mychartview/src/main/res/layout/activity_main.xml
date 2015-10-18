@@ -13,7 +13,7 @@
         android:layout_height="170dp"
         android:scrollbars="none"
         ></com.apple.mychartview.weight.ScrollHistogramView>
-
+<!---->
     <HorizontalScrollView
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
